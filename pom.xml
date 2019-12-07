@@ -12,10 +12,26 @@
 	<url>http://openmrs.org</url>
 
 	<scm>
-		<connection>scm:svn:http://svn.openmrs.org/openmrs-modules/mohtracportal/trunk/</connection>
-		<developerConnection>scm:svn:http://svn.openmrs.org/openmrs-modules/mohtracportal/trunk/</developerConnection>
-		<url>http://svn.openmrs.org/openmrs-modules/mohtracportal/trunk/</url>
+		<connection>scm:git:git@github.com:Rwanda-EMR/openmrs-module-mohtracportal.git</connection>
+		<developerConnection>scm:git:git@github.com:Rwanda-EMR/openmrs-module-mohtracportal.git</developerConnection>
+		<url>https://github.com/Rwanda-EMR/openmrs-module-mohtracportal/</url>
+		<tag>HEAD</tag>
 	</scm>
+
+
+	<distributionManagement>
+		<repository>
+			<id>openmrs-repo-modules</id>
+			<name>Modules</name>
+			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/modules/</url>
+		</repository>
+		<snapshotRepository>
+			<id>openmrs-repo-snapshots</id>
+			<name>OpenMRS Snapshots</name>
+			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 
 	<modules>
 		<module>api</module>
