@@ -31,6 +31,11 @@
 	</extension>
 
 
+	<aware_of_modules>
+		<aware_of_module>org.openmrs.module.legacyui</aware_of_module>
+	</aware_of_modules>
+
+
 	<!--
 		AOP <advice> <point>org.openmrs.api.FormService</point>
 		<class>@MODULE_PACKAGE@.advice.DuplicateFormAdvisor</class> </advice>

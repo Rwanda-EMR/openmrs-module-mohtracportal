@@ -16,26 +16,27 @@ package org.openmrs.module.mohtracportal;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openmrs.module.Activator;
+import org.openmrs.module.BaseModuleActivator;
 
 /**
  * This class contains the logic that is run every time this module is either started or shutdown
  */
-public class MohTracPortalModuleActivator implements Activator {
+public class MohTracPortalModuleActivator extends BaseModuleActivator {
 	
 	private Log log = LogFactory.getLog(this.getClass());
 	
 	/**
-	 * @see org.openmrs.module.Activator#startup()
-	 */
-	public void startup() {
-		log.info("Starting MOH-TRAC Portal");
+	 * @see BaseModuleActivator#started()
+	 * */
+	public void started() {
+		log.info("MOH-TRAC Portal started");
 	}
 	
 	/**
-	 * @see org.openmrs.module.Activator#shutdown()
-	 */
-	public void shutdown() {
-		log.info("Shutting down MOH-TRAC Portal");
+	 * @see BaseModuleActivator#stopped()
+	 **/
+	public void stopped() {
+		log.info("MOH-TRAC Portal stopped");
 	}
 	
 }
