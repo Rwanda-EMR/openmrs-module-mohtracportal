@@ -40,7 +40,7 @@ public class MohTracPortalLocationSponsorFormController extends
 			ServletRequestDataBinder binder) throws Exception {
 		binder.registerCustomEditor(Location.class, new LocationEditor());
 		binder.registerCustomEditor(java.util.Date.class, new CustomDateEditor(
-				OpenmrsUtil.getDateFormat(), true));
+				OpenmrsUtil.getDateFormat(Context.getLocale()), true));
 		binder.registerCustomEditor(Sponsor.class, new SponsorEditor());
 	}
 

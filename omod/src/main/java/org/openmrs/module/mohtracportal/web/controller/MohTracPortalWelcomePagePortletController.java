@@ -12,10 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.openmrs.api.context.Context;
-import org.openmrs.layout.web.LayoutSupport;
-import org.openmrs.layout.web.address.AddressSupport;
-import org.openmrs.web.controller.layout.LayoutPortletController;
+import org.openmrs.layout.LayoutSupport;
+import org.openmrs.layout.address.AddressSupport;
 import org.springframework.web.servlet.ModelAndView;
+import org.openmrs.web.controller.layout.LayoutPortletController;
 
 /**
  * @author Yves GAKUBA

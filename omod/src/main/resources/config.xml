@@ -14,8 +14,10 @@
 
 	<activator>@MODULE_PACKAGE@.MohTracPortalModuleActivator</activator>
 
+<!--
 	<require_version>1.6.2.12911</require_version>
-
+-->
+	<require_version>1.9.0</require_version>
 	<!-- <extension>
 		<point>org.openmrs.navigation.homepage</point>
 		<class>@MODULE_PACKAGE@.extension.html.RedirectToActivityPage</class>
@@ -25,16 +27,18 @@
 		<class>@MODULE_PACKAGE@.extension.html.MohTracActivitiesGutterLink</class>
 	</extension> -->
 
-	<extension>
-		<point>org.openmrs.admin.list</point>
-		<class>@MODULE_PACKAGE@.extension.html.AdminList</class>
-	</extension>
-
+	<!--<require_modules>
+		<require_module version="0.3-SNAPSHOT">org.openmrs.module.legacyui</require_module>
+	</require_modules>-->
 
 	<aware_of_modules>
 		<aware_of_module>org.openmrs.module.legacyui</aware_of_module>
 	</aware_of_modules>
 
+	<extension>
+		<point>org.openmrs.admin.list</point>
+		<class>@MODULE_PACKAGE@.extension.html.AdminList</class>
+	</extension>
 
 	<!--
 		AOP <advice> <point>org.openmrs.api.FormService</point>
