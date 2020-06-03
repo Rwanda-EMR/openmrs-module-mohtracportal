@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE module PUBLIC "-//OpenMRS//DTD OpenMRS Config 1.2//EN" "http://resources.openmrs.org/doctype/config-1.2.dtd">
-
-<module configVersion="1.2">
+<module configVersion="1.3">
 
 	<id>@MODULE_ID@</id>
 	<name>@MODULE_NAME@</name>
@@ -14,10 +12,8 @@
 
 	<activator>@MODULE_PACKAGE@.MohTracPortalModuleActivator</activator>
 
-<!--
-	<require_version>1.6.2.12911</require_version>
--->
-	<require_version>1.9.0</require_version>
+	<require_version>${openMRSVersion}</require_version>
+
 	<!-- <extension>
 		<point>org.openmrs.navigation.homepage</point>
 		<class>@MODULE_PACKAGE@.extension.html.RedirectToActivityPage</class>
@@ -27,9 +23,6 @@
 		<class>@MODULE_PACKAGE@.extension.html.MohTracActivitiesGutterLink</class>
 	</extension> -->
 
-	<!--<require_modules>
-		<require_module version="0.3-SNAPSHOT">org.openmrs.module.legacyui</require_module>
-	</require_modules>-->
 
 	<aware_of_modules>
 		<aware_of_module>org.openmrs.module.legacyui</aware_of_module>
