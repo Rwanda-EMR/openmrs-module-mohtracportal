@@ -3,19 +3,15 @@
  */
 package org.openmrs.module.mohtracportal.web.controller;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
+import org.openmrs.layout.LayoutSupport;
+import org.openmrs.layout.address.AddressSupport;
+import org.openmrs.web.controller.layout.LayoutPortletController;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.openmrs.api.context.Context;
-import org.openmrs.layout.LayoutSupport;
-import org.openmrs.layout.address.AddressSupport;
-import org.springframework.web.servlet.ModelAndView;
-import org.openmrs.web.controller.layout.LayoutPortletController;
+import java.io.IOException;
 
 /**
  * @author Yves GAKUBA
