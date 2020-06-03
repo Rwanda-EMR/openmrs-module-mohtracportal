@@ -24,12 +24,23 @@
 		<artifactId>${project.parent.artifactId}-api</artifactId>
 		<version>${project.parent.version}</version>
 	</dependency>
+
 	<dependency>
-		<groupId>org.openmrs.module</groupId>
-		<artifactId>mohtracportal-api</artifactId>
-		<version>${project.parent.version}</version>
+		<groupId>org.openmrs.web</groupId>
+		<artifactId>openmrs-web</artifactId>
+		<version>${openMRSVersion}</version>
+		<type>jar</type>
+		<scope>provided</scope>
 	</dependency>
 
+	<dependency>
+		<groupId>org.openmrs.web</groupId>
+		<artifactId>openmrs-web</artifactId>
+		<version>${openMRSVersion}</version>
+		<type>jar</type>
+		<scope>test</scope>
+		<classifier>tests</classifier>
+	</dependency>
 
 	<dependency>
 		<groupId>org.openmrs.module</groupId>
