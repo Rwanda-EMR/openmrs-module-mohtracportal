@@ -17,7 +17,7 @@
 <!--
 	<require_version>1.6.2.12911</require_version>
 -->
-	<require_version>1.9.0</require_version>
+	<require_version>${openMRSVersion}</require_version>
 	<!-- <extension>
 		<point>org.openmrs.navigation.homepage</point>
 		<class>@MODULE_PACKAGE@.extension.html.RedirectToActivityPage</class>
