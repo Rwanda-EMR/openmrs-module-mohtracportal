@@ -8,7 +8,7 @@ that repository.  The advantage of this platform for the RwandaEMR project is th
 repository can create or edit a CI workflow.
 
 Anyone can also easily view all of the details of each workflow within the code project itself.  
-See the [workflows defined here](https://github.com/Rwanda-EMR/openmrs-module-mohtracportal/.github/workflows) 
+See the [workflows defined here](https://github.com/Rwanda-EMR/openmrs-module-mohtracportal/tree/master/.github/workflows) 
 for how this is configured for this project.
 
 ## Standard Workflows
@@ -23,7 +23,7 @@ this job runs a “mvn verify”, which compiles, tests, and verifies that the t
 For every commit pushed to the configured branches (currently master), this job runs a “mvn deploy”, which compiles, 
 executes tests, and verifies that this builds without errors, and if so, deploys to the OpenMRS Maven Snapshots repository 
 that is configured in the distributionManagement section of 
-the [pom.xml](https://github.com/Rwanda-EMR/openmrs-module-mohtracportal/pom.xml)
+the [pom.xml](https://github.com/Rwanda-EMR/openmrs-module-mohtracportal/blob/master/pom.xml)
 
 ### perform-release:
 
