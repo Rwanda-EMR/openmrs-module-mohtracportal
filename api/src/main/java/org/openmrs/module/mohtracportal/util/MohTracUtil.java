@@ -3,12 +3,6 @@
  */
 package org.openmrs.module.mohtracportal.util;
 
-import java.text.DecimalFormat;
-import java.text.SimpleDateFormat;
-import java.util.HashMap;
-import java.util.List;
-
-import org.apache.commons.logging.LogFactory;
 import org.openmrs.Concept;
 import org.openmrs.ConceptAnswer;
 import org.openmrs.Location;
@@ -20,6 +14,11 @@ import org.openmrs.api.context.Context;
 import org.openmrs.api.context.ServiceContext;
 import org.openmrs.module.mohtracportal.Sponsor;
 import org.openmrs.module.mohtracportal.service.MohTracPortalService;
+
+import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * @author Administrator
@@ -161,13 +160,7 @@ public class MohTracUtil {
 	 * @return
 	 */
 	public static String getMessage(String messageId, Object[] parameters) {
-		
-//		LogFactory.getLog(MohTracUtil.class).info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> "+Context.getLocale());
-		
-		String msg = ContextProvider.getMessage(
-				messageId, parameters);
-		
-		
+		String msg = Context.getMessageSourceService().getMessage(messageId, parameters, Context.getLocale());
 		return (null!=msg)?msg:"";
 	}
 

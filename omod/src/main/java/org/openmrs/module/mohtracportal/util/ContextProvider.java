@@ -25,8 +25,7 @@ import org.springframework.web.context.ServletContextAware;
  * Utility class to give non bean classes access to the Spring application
  * context and the servlet context
  */
-public class ContextProvider implements ApplicationContextAware,
-		ServletContextAware {
+public class ContextProvider implements ApplicationContextAware, ServletContextAware {
 
 	protected static ApplicationContext appContext = null;
 	protected static ServletContext srvContext = null;
@@ -37,8 +36,7 @@ public class ContextProvider implements ApplicationContextAware,
 	 * @param ctx
 	 *            the application context
 	 */
-	public void setApplicationContext(ApplicationContext ctx)
-			throws BeansException {
+	public void setApplicationContext(ApplicationContext ctx) throws BeansException {
 		appContext = ctx;
 	}
 
